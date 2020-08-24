@@ -11,7 +11,7 @@ program.version('0.0.1');
 
 program
   .option('-i, --ip <ipadress>', 'ip address')
-  .option('-t, --type <type>', 'type ( json,xml )')
+  .option('-t, --type <type>', 'type ( json,xml,yaml )')
   .option('-a, --auth <accesstoken>', 'accesstoken');
 
 program.parse(process.argv);
