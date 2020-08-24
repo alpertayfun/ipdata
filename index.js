@@ -7,7 +7,7 @@ const yaml = require('yaml');
 const program = new Command();
 var options = {escape:true,prettyPrint:true,xmlHeader:{standalone:true}};
 
-program.version('0.0.1');
+program.version('0.0.3');
 
 program
   .option('-i, --ip <ipadress>', 'ip address')
