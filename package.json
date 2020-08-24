@@ -1,0 +1,44 @@
+{
+  "name": "ipdata",
+  "version": "0.0.1",
+  "description": "Node-based IP address lookup utility",
+  "main": "build/ipdata.js",
+  "scripts": {
+    "test": "npx test"
+  },
+  "bin": {
+    "ipeek": "build/ipdata.js"
+  },
+  "engines": {
+    "node": ">=8"
+  },
+  "preferGlobal": true,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alpertayfun/ipdata.git"
+  },
+  "keywords": [
+    "node",
+    "ip",
+    "lookup",
+    "track",
+    "address",
+    "information",
+    "dns"
+  ],
+  "author": "Alper Tayfun",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alpertayfun/ipdata/issues"
+  },
+  "homepage": "https://github.com/alpertayfun/ipdata#readme",
+  "devDependencies": {},
+  "dependencies": {
+    "@types/commander": "^2.12.2",
+    "@types/request": "^2.47.1",
+    "commander": "^2.20.3",
+    "jsontoxml": "^1.0.1",
+    "request": "^2.88.2",
+    "yaml": "^1.10.0"
+  }
+}
