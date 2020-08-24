@@ -1,13 +1,13 @@
 {
-  "name": "ipdata",
+  "name": "@alpertayfun/ipdata",
   "version": "0.0.1",
   "description": "Node-based IP address lookup utility",
-  "main": "build/ipdata.js",
+  "main": "index.js",
   "scripts": {
     "test": "npx test"
   },
   "bin": {
-    "ipeek": "build/ipdata.js"
+    "ipdata": "index.js"
   },
   "engines": {
     "node": ">=8"
