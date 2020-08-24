@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 var request = require('request');
 const { Command } = require('commander');
 var jsonxml = require('jsontoxml');
