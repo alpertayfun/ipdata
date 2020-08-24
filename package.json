@@ -17,6 +17,7 @@
     "type": "git",
     "url": "git+https://github.com/alpertayfun/ipdata.git"
   },
+  "private": false,
   "keywords": [
     "node",
     "ip",
