@@ -1,5 +1,11 @@
 ## ipdata
 
+[![license](https://img.shields.io/badge/license-MIT-green.svg?style=flat)](https://raw.githubusercontent.com/alpertayfun/ipdata/master/LICENSE)
+
+
+[![NPM](https://nodei.co/npm/@alpertayfun/ipdata.png?compact=true)](https://nodei.co/npm/@alpertayfun/ipdata/)
+
+
 ## About
 </br>
 
@@ -42,5 +48,81 @@ Options:
 </br>
 </br>
 
+## Example
+</br>
 
-ipdata -i ipAddress -t type -a accessToken
+```
+$ ipdata -i 89.41.26.61 -t json -a 123456asd
+
+{
+  ip: '89.41.26.61',
+  city: 'Los Angeles',
+  region: 'California',
+  country: 'US',
+  loc: '34.0443,-118.2509',
+  org: 'AS9009 M247 Ltd',
+  postal: '90014',
+  timezone: 'America/Los_Angeles'
+}
+
+
+$ ipdata -i 89.41.26.61 -t xml -a 123456asd
+
+<?xml version="1.0" encoding="utf-8"?>
+<ipInfo>
+        <ip>89.41.26.61</ip>
+        <city>Los Angeles</city>
+        <region>California</region>
+        <country>US</country>
+        <loc>34.0443,-118.2509</loc>
+        <org>AS9009 M247 Ltd</org>
+        <postal>90014</postal>
+        <timezone>America/Los_Angeles</timezone>
+</ipInfo>
+
+
+$ ipdata -i 89.41.26.61 -t yaml -a 123456asd
+
+ipInfo:
+  ip: 89.41.26.61
+  city: Los Angeles
+  region: California
+  country: US
+  loc: 34.0443,-118.2509
+  org: AS9009 M247 Ltd
+  postal: "90014"
+  timezone: America/Los_Angeles
+```
+</br>
+</br>
+
+
+## Limitations
+</br>
+
+Please , get your access token via ipinfo.io before using. 
+</br>
+</br>
+
+
+## History
+</br>
+
+- **Alpha v0.0.2**
+    - Adding some issues.
+
+
+- **Alpha v0.0.1**
+    - Initial release
+</br>
+</br>
+
+
+## Issues
+</br>
+
+Do you have any issues or recommendations for this package? Feel free to open an issue in the [issue](https://github.com/alpertayfun/ipdata/issues) section.
+</br>
+</br>
+
+
