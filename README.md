@@ -109,6 +109,10 @@ Please , get your access token via vendor website before using.
 ## History
 </br>
 
+- **Alpha v0.0.7**
+    - Adding vendor support.
+    - Fixing some callback issue.
+
 - **Alpha v0.0.2**
     - Adding some issues.
 
