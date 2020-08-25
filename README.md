@@ -109,6 +109,10 @@ Please , get your access token via vendor website before using.
 ## History
 </br>
 
+- **Alpha v0.0.9**
+    - Adding csv support.
+    - Improvements.
+
 - **Alpha v0.0.8**
     - Adding new vendors.
     - Improvements.
