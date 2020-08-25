@@ -11,9 +11,9 @@
 
 Hello ,
 
-This is ipinfo for using via terminal.
+This is ip geolocation information for using via terminal.
 
-You must get your access token via ipinfo.io before using.
+You must get your access token via vendor website before using.
 </br>
 </br>
 
@@ -42,6 +42,7 @@ Options:
   -i, --ip <ipadress>       ip address
   -t, --type <type>         type ( json,xml,yaml )
   -a, --auth <accesstoken>  accesstoken
+  -v, --vendor <vendorname> vendor name ( ipinfo , ip-api,ipstack )
   -h, --help                output usage information
 ```
 
@@ -52,7 +53,7 @@ Options:
 </br>
 
 ```
-$ ipdata -i 89.41.26.61 -t json -a 123456asd
+$ ipdata -i 89.41.26.61 -t json -a 123456asd -v ipinfo
 
 {
   ip: '89.41.26.61',
@@ -66,7 +67,7 @@ $ ipdata -i 89.41.26.61 -t json -a 123456asd
 }
 
 
-$ ipdata -i 89.41.26.61 -t xml -a 123456asd
+$ ipdata -i 89.41.26.61 -t xml -a 123456asd -v ipinfo
 
 <?xml version="1.0" encoding="utf-8"?>
 <ipInfo>
@@ -81,7 +82,7 @@ $ ipdata -i 89.41.26.61 -t xml -a 123456asd
 </ipInfo>
 
 
-$ ipdata -i 89.41.26.61 -t yaml -a 123456asd
+$ ipdata -i 89.41.26.61 -t yaml -a 123456asd -v ipinfo
 
 ipInfo:
   ip: 89.41.26.61
@@ -100,7 +101,7 @@ ipInfo:
 ## Limitations
 </br>
 
-Please , get your access token via ipinfo.io before using. 
+Please , get your access token via vendor website before using. 
 </br>
 </br>
 

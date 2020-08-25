@@ -7,12 +7,12 @@ const yaml = require('yaml');
 const program = new Command();
 var options = {escape:true,prettyPrint:true,xmlHeader:{standalone:true}};
 
-program.version('0.0.5');
+program.version('0.0.6');
 
 program
   .option('-i, --ip <ipadress>', 'ip address')
   .option('-t, --type <type>', 'type ( json,xml,yaml )')
-  .option('-v, --vendor <vendorname>', 'vendor name ( ipinfo , ip-api )')
+  .option('-v, --vendor <vendorname>', 'vendor name ( ipinfo , ip-api,ipstack )')
   .option('-a, --auth <accesstoken>', 'accesstoken');
 
 program.parse(process.argv);
