@@ -7,15 +7,16 @@ const yaml = require('yaml');
 const program = new Command();
 var options = {escape:true,prettyPrint:true,xmlHeader:{standalone:true}};
 
-program.version('0.0.7');
+program.version('0.0.8');
 
 program
   .option('-i, --ip <ipadress>', 'ip address')
   .option('-t, --type <type>', 'type ( json,xml,yaml )')
-  .option('-v, --vendor <vendorname>', 'vendor name ( ipinfo , ip-api,ipstack )')
+  .option('-v, --vendor <vendorname>', 'vendor name ( ipinfo , ip-api, ipstack, ipfind, ipgeolocation, ipdata )')
   .option('-a, --auth <accesstoken>', 'accesstoken');
 
 program.parse(process.argv);
+
 
 var vendor = [{ vendor:"ipinfo" , options: {
     'method': 'GET',
@@ -29,17 +30,37 @@ var vendor = [{ vendor:"ipinfo" , options: {
   }} , { vendor:"ipstack" , options: {
     'method': 'GET',
     'url': "http://api.ipstack.com/"+program.ip+"?access_key="+program.auth
+  }}, { vendor:"ipfind" , options: {
+    'method': 'GET',
+    'url': "https://ipfind.co/?ip="+program.ip+"&auth="+program.auth
+  }}, { vendor:"ipgeolocation" , options: {
+    'method': 'GET',
+    'url': "https://api.ipgeolocation.io/ipgeo?ip="+program.ip+"&apiKey="+program.auth
+  }}, { vendor:"ipdata" , options: {
+    'method': 'GET',
+    'url': "https://api.ipdata.co/"+program.ip+"?api-key="+program.auth
   }}
 ];
 
-if(program.vendor=="ipinfo" || program.vendor=="ip-api" || program.vendor=="ipstack"){
+if(program.vendor=="ipinfo" 
+    || program.vendor=="ip-api" 
+    || program.vendor=="ipstack"
+    || program.vendor=="ipfind" 
+    || program.vendor=="ipgeolocation"
+    || program.vendor=="ipdata"
+    ){
     var getVendor = program.vendor ? program.vendor : 'ipinfo';
 }else{
     var getVendor = "ipinfo";
 }
 var index = vendor.findIndex(obj => obj.vendor==getVendor);
 
-if(getVendor=="ipinfo" || getVendor=="ipstack" ){
+if(getVendor=="ipinfo" 
+    || getVendor=="ipstack"
+    || getVendor=="ipfind" 
+    || getVendor=="ipgeolocation"
+    || getVendor=="ipdata"
+    ){
     if(program.auth){
         if (program.ip){
             getData(function(err,data){
