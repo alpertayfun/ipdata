@@ -40,7 +40,7 @@ Usage: ipdata [options]
 Options:
   -V, --version             output the version number
   -i, --ip <ipadress>       ip address
-  -t, --type <type>         type ( json,xml,yaml )
+  -t, --type <type>         type ( json,xml,yaml,csv )
   -a, --auth <accesstoken>  accesstoken
   -v, --vendor <vendorname> vendor name ( ipinfo , ip-api, ipstack, ipfind, ipgeolocation, ipdata )
   -h, --help                output usage information
@@ -108,6 +108,13 @@ Please , get your access token via vendor website before using.
 
 ## History
 </br>
+
+- **Alpha v0.0.10**
+    - README updated.
+
+- **Alpha v0.0.9**
+    - Adding csv support.
+    - Improvements.
 
 - **Alpha v0.0.9**
     - Adding csv support.
