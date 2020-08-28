@@ -109,7 +109,7 @@ Please , get your access token via vendor website before using.
 ## History
 </br>
 
-- **Alpha v0.0.12**
+- **Alpha v0.0.14**
     - Adding new vendors.
 
 - **Alpha v0.0.10**
