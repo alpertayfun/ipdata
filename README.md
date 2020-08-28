@@ -42,7 +42,7 @@ Options:
   -i, --ip <ipadress>       ip address
   -t, --type <type>         type ( json,xml,yaml,csv )
   -a, --auth <accesstoken>  accesstoken
-  -v, --vendor <vendorname> vendor name ( ipinfo , ip-api, ipstack, ipfind, ipgeolocation, ipdata )
+  -v, --vendor <vendorname> vendor name ( ipinfo , ip-api, ipstack, ipfind, ipify, abstractapi, ip2location, ipgeolocation, ipdata, ipapi, ipgeolocationapi, freegeoip, extreme-ip-lookup )
   -h, --help                output usage information
 ```
 
@@ -109,7 +109,7 @@ Please , get your access token via vendor website before using.
 ## History
 </br>
 
-- **Alpha v0.0.11**
+- **Alpha v0.0.12**
     - Adding new vendors.
 
 - **Alpha v0.0.10**

@@ -9,7 +9,7 @@ const program = new Command();
 var options = {escape:true,prettyPrint:true,xmlHeader:{standalone:true}};
 var getVendor = null;
 
-program.version('0.0.11');
+program.version('0.0.12');
 
 program
   .option('-i, --ip <ipadress>', 'ip address')
