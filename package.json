@@ -1,6 +1,6 @@
 {
   "name": "@alpertayfun/ipdata",
-  "version": "0.0.10",
+  "version": "0.0.11",
   "description": "Node-based IP address lookup utility",
   "main": "index.js",
   "scripts": {
