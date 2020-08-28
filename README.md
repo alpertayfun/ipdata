@@ -109,6 +109,9 @@ Please , get your access token via vendor website before using.
 ## History
 </br>
 
+- **Alpha v0.0.11**
+    - Adding new vendors.
+
 - **Alpha v0.0.10**
     - README updated.
 
